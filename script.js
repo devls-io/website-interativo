@@ -92,8 +92,6 @@ class RelaxMode {
     }
 }
 
-new RelaxMode()
-
 
 class Clock {
     constructor(element){

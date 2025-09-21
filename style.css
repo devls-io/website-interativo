@@ -82,11 +82,13 @@ section h3 {
   margin-top: 20px;
 }
 
-/* Largura das caixas de notícias */
+/* Caixas de Noticias */
+
 .list-group-item {
-  width: 50%; 
-  margin: 10px auto; 
+    width: 50%; 
+   
 }
+
 
 footer p {
   margin-bottom: 0;
@@ -213,6 +215,12 @@ footer p {
     font-size: 1.2em;
 }
 
+.navbar-nav .nav-item .navItems {
+  display: flex; /* Transforma o link em um container flexbox */
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: space-between; /* Distribui o texto e a seta */
+}
+
 @media (max-width: 768px) {
 
   header{
@@ -223,10 +231,12 @@ footer p {
     z-index: 1030;
   }
 
-
-
   body{
     padding-top: 60px;
+  }
+
+  main img{
+    width: 85%;
   }
 
   /* Correção de rolagem para as âncoras */
@@ -247,4 +257,14 @@ footer p {
   }
 
 
+}
+
+@media (max-width: 400px) {
+  .list-group a.list-group-item p {
+    font-size: 12px;
+  }
+
+  #small-text{
+    font-size: 10px;
+  }
 }
